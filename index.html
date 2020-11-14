@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokédex</title>
+</head>
+
+<body>
+    <header id="head">
+        <img class="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/800px-Pok%C3%A9mon_GO_logo.svg.png">
+        <nav>
+            <a href="#types">TIPOS</a>
+            <a href="#search">BUSCAR</a>
+        </nav>
+    </header>
+    <div class="containerone">
+    <div class="wrapper1"><img
+            src="https://www.pngitem.com/pimgs/m/181-1815440_pokemon-pixel-art-pikachu-hd-png-download.png">
+        </div>
+    <div class="wrapper2">
+     <h1 class="title">¿Cuántos Pokémon existen?</h1>
+        <p>Existen muchas especies de pokémon alrededor del planeta, cada día se descubren más, y los entrenadores están
+            al pendiente para conocer cada detalle de ellos.</p>
+        <button class="meet" id="start">Conócelos</button>
+    </div>
+
+
+
+   
+   
+   
+            <div id="types" class="pokeType">Tipos de Pokémon</div>
+    <div class="element3">
+        <button class="buttons" id="bugBtn">Bicho</button>
+        <button class="buttons" id="dragonBtn">Dragón</button>
+        <button class="buttons" id="normalBtn">Normal</button>
+        <button class="buttons" id="fireBtn">Fuego</button>
+        <button class="buttons" id="ghostBtn">Fantasma</button>
+        <button class="buttons" id="groundBtn">Tierra</button>
+        <button class="buttons" id="psychicBtn">Psíquico</button>
+        <button class="buttons" id="fightingBtn">Lucha</button>
+        <button class="buttons" id="poisonBtn">Veneno</button>
+        <button class="buttons" id="rockBtn">Roca</button>
+        <button class="buttons" id="waterBtn">Agua</button>
+        <button class="buttons" id="flyingBtn">Volador</button>
+        <button class="buttons" id="plantBtn">Planta</button>
+        <button class="buttons" id="iceBtn">Hielo</button>
+        <button class="buttons" id="electricBtn">Eléctrico</button>
+
+    </div>
+
+
+
+
+  
+
+    <div class="search" id="search">
+        <h3>Puedes buscar a tú pokémon favorito por su nombre</h3>
+        <input  class="searchField" ></input><br>
+        <button class="searchBtn" >Buscar</button>
+    </div>
+</div>
+<div id="container">
+    <div  id="poke-container" class="ui-cards">
+            <!-- will hold the cards for all the pokemon -->
+            
+    </div>
+</div>
+    <a href="#head" class="up">ARRIBA</a> 
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
