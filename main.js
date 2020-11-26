@@ -45,8 +45,7 @@ formulario.addEventListener('keyup', (e) => {
   console.log(e.target.value)
   const filteredPoke = list.filter((pokemon) => {
      return(
-         pokemon.name.toLowerCase().includes(searchString) ||
-         pokemon.id.includes(searchString)
+         pokemon.name.toLowerCase().includes(searchString) 
      )
       });
   console.log(filteredPoke)
@@ -88,21 +87,20 @@ typeFilterButtons.forEach((buttons) => buttons.addEventListener('click', filterB
 function filterBichos(event) {
 event.preventDefault();
 let id = event.target.id;
-let filteredList = pokeTypes(id);
+let filteredList = filterByType(id);
 console.log(id)
 console.log(filteredList)
-console.log(filteredList.push("holiii"))
-drawAllPokemons(pokeTypes) // [{},{}]
+drawAllPokemons(filterByType) // [{},{}]
 
-function pokeTypes(){
-  return(list.map(list => list.type));
+// function pokeTypes(){
+//   console.log(list.map(list => list.type));
   
-}; 
-}
-// // function filterByType(type){
-// //   return list.filter((pokemon) => pokemon.type.includes(type))
-// //  };
+// }; 
 
+function filterByType(type){
+return list.filter((pokemon) => pokemon.type.includes(type))
+ };
+}
 
 // const filteredPoke = list.filter((pokemon) => {
 //   return(
