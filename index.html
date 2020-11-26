@@ -16,13 +16,12 @@
     <header id="head">
         <img class="imgHeader"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/800px-Pok%C3%A9mon_GO_logo.svg.png">
-
         <nav>
-            <a href="#types">TIPOS</a>
-            <a href="#search">BUSCAR</a>
+            <p><a href="#search">BUSCAR</a></p>
         </nav>
     </header>
     <div class="containerone">
+
         <div class="wrapper1">
             <img src="https://www.pngitem.com/pimgs/m/181-1815440_pokemon-pixel-art-pikachu-hd-png-download.png">
         </div>
@@ -31,11 +30,12 @@
             <p>Existen muchas especies de pokémon alrededor del planeta, cada día se descubren más, y los entrenadores
                 están
                 al pendiente para conocer cada detalle de ellos.</p>
-            <button class="meet" id="start">Conócelos</button>
+            <button class="meet" id="start">Conócelos a todos</button>
         </div>
+    </div>
 
-
-        <div id="types" class="pokeType">Tipos de Pokémon</div>
+    <div class="containertwo">
+        <h2 id="search" class="pokeType">Tipos de Pokémon</h2>
         <div class="element3">
             <button class="buttons" id="Bug">Bicho</button>
             <button class="buttons" id="Dragon">Dragón</button>
@@ -52,22 +52,18 @@
             <button class="buttons" id="Grass">Planta</button>
             <button class="buttons" id="Ice">Hielo</button>
             <button class="buttons" id="Electric">Eléctrico</button>
-
-        </div>
-
-        <div class="search" id="search">
-            <h3>Puedes buscar a tú pokémon favorito por su nombre</h3>
-            <input class="searchField"></input><br>
-            <button class="searchBtn">Buscar</button>
         </div>
     </div>
+
+    <h3>Puedes buscar a tú pokémon favorito por su nombre</h3>
+    <div class="search" id="search">
+
+        <input class="searchField"></input><br>
+        <button class="searchBtn">Buscar<i class="w3-margin-left fa fa-search" style="font-size:24px"></i></button>
+    </div>
+
     <div id="container"></div>
-
-
-
-
     <a href="#head" class="up">ARRIBA</a>
-
     <script type="module" src="main.js"></script>
 </body>
 

@@ -1,37 +1,15 @@
 body{
-  display: grid;
     background-color: #F7F7F7;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     color:#25293a;
-    
 }
-
 
 header{
     background-color: #eaeff7;
     border-bottom: 3pt solid #25293a;
-    display: grid;
-    grid-template-columns: 80% 20%;
-}
-
-
-.containerone{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
-
-.title{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color:#25293a;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .imgHeader{
@@ -39,10 +17,11 @@ header{
     height: 120px;
 }
 
+
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 40px;
 }
 
@@ -55,27 +34,39 @@ nav a{
 
 }
 
-.card-container{
-    background-color: #dddddd;
-    border: 2px solid black;
-    border-radius: 5pt;
+
+.containerone{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    flex-direction: row;
-    width: 200px;
-    height: 400px;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper1{
     display: flex;
+    align-items: flex-start;
+}
+
+.wrapper1 img{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: auto;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color:#25293a;
+    
 }
 
 .wrapper2{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
 }
 
 .wrapper2 button{
@@ -87,6 +78,51 @@ nav a{
 
     border-radius: 5pt;
 }
+
+.wrapper2 h1{
+  text-align: center;
+}
+
+.wrapper2 p{
+    text-align: center;
+  }
+
+
+.containertwo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 142px;
+}
+
+
+.containertwo h2{
+    text-align: center;
+
+}
+
+.element3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
 
 .element3 button{
      
@@ -103,6 +139,24 @@ max-width:max-content;
     color: #F7F7F7;
     font-weight: bold;
     background-color: #25293a;
-max-width:max-content;
+    max-width:max-content;
     border-radius: 5pt;
+}
+
+.card-container{
+    background-color: #eaeff7;
+    border: 2px solid #25293a;
+    border-radius: 5pt;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: center;
+    flex-direction: row;
+    width: 200px;
+    height: 400px;
+}
+
+.container{
+    margin: 100px;
 }
