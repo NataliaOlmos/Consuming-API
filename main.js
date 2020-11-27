@@ -6,7 +6,7 @@ let start = document.querySelector('#start')
 const container = document.querySelector('#container');
 const list = data.pokemon;
 const formulario = document.querySelector(".searchField");
-const boton = document.querySelector(".searchBtn");
+
 
 
 //Show all pokemons
@@ -46,7 +46,6 @@ formulario.addEventListener('keyup', (e) => {
     )
   });
 
-  boton.addEventListener('click', filteredPoke)
 
   drawPokemons(filteredPoke)
 
